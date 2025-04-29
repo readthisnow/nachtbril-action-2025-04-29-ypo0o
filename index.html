@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachtbril Action - 20% Korting op Nachtbrillen</title>
+    <meta name="description" content="Profiteer nu van 20% korting op onze premium nachtbrillen. Verbeter je nachtzicht en rijveiligheid.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-600">Nachtbril Action</div>
+                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Kenmerken</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-20">
+            <div class="container mx-auto px-6 py-24">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8 leading-tight">
+                        Nachtbril Action<br>
+                        <span class="text-blue-600">Tijdelijk 20% KORTING!</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                        🔥 Nog maar enkele uren geldig! Verbeter je nachtzicht en rij veiliger in het donker.
+                    </p>
+                    <a href="https://nachtbril.com/shop" class="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        Profiteer Nu van 20% Korting
+                    </a>
+                    <p class="mt-4 text-sm text-gray-500">⚡ Nog maar <span class="text-red-500 font-bold">8 stuks</span> op voorraad</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Waarom Onze Nachtbril?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Verbeterd Nachtzicht</h3>
+                        <p class="text-gray-600">Nog maar 5 klanten kunnen profiteren van deze unieke technologie!</p>
+                    </div>
+                    <!-- More feature cards... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Voordelen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Benefits content... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white" x-data="{selected:null}">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ items... -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Mis Deze Aanbieding Niet!</h2>
+                <p class="text-xl mb-12">⏰ Aanbieding verloopt binnen 24 uur</p>
+                <a href="https://nachtbril.com/shop" class="inline-block bg-white text-blue-600 text-lg font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    Bestel Nu Met 20% Korting
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-400">support@example.com</p>
+                </div>
+                <!-- More footer columns... -->
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 Nachtbril Action. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
